@@ -1,7 +1,10 @@
+
 %include	/usr/lib/rpm/macros.python
+
 %define 	module pyxattr
-Summary:	python module for accessing filesystem Extended Attributes
-Summary(pl):	modu³ pythona pozwalaj±cy na dostêp Extended Attributes systemu plików
+
+Summary:	Python module for accessing Extended Attributes of the files
+Summary(pl):	Modu³ jêzyka Python pozwalaj±cy na dostêp do rozszerzonych atrybutów plików
 Name:		python-%{module}
 Version:	0.2
 Release:	1
@@ -12,14 +15,15 @@ Source0:	http://dl.sourceforge.net/%{module}/%{module}-%{version}.tar.gz
 URL:		http://pyxattr.sourceforge.net/
 BuildRequires:	attr-devel
 BuildRequires:	rpm-pythonprov
-Requires:	python
+%pyrequires_eq	python-libs
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-python module for accessing filesystem Extended Attributes.
+Python module for accessing Extended Attributes of the files.
 
 %description -l pl
-modu³ pythona pozwalaj±cy na dostêp Extended Attributes systemu plików.
+Modu³ jêzyka Python pozwalaj±cy na dostêp do rozszerzonych atrybutów
+plików.
 
 %prep
 %setup -q -n %{module}-%{version}
