@@ -12,7 +12,6 @@ Source0:	http://dl.sourceforge.net/%{module}/%{module}-%{version}.tar.gz
 # Source0-md5:	6f824d05d6052c05f327d619f92c8a5a
 URL:		http://pyxattr.sourceforge.net/
 BuildRequires:	attr-devel
-BuildRequires:	rpm-pythonprov
 %pyrequires_eq	python-libs
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
