@@ -1,7 +1,7 @@
 
 %include	/usr/lib/rpm/macros.python
 
-%define 	module pyxattr
+%define 	module	pyxattr
 
 Summary:	Python module for accessing Extended Attributes of the files
 Summary(pl):	Modu³ jêzyka Python pozwalaj±cy na dostêp do rozszerzonych atrybutów plików
