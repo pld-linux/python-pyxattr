@@ -1,12 +1,11 @@
 
-
 %define 	module	pyxattr
 
 Summary:	Python module for accessing Extended Attributes of the files
 Summary(pl):	Modu³ jêzyka Python pozwalaj±cy na dostêp do rozszerzonych atrybutów plików
 Name:		python-%{module}
 Version:	0.2
-Release:	1
+Release:	2
 License:	GPL
 Group:		Libraries/Python
 Source0:	http://dl.sourceforge.net/%{module}/%{module}-%{version}.tar.gz
