@@ -2,7 +2,7 @@
 %define 	module	pyxattr
 
 Summary:	Python module for accessing Extended Attributes of the files
-Summary(pl):	Modu³ jêzyka Python pozwalaj±cy na dostêp do rozszerzonych atrybutów plików
+Summary(pl.UTF-8):   ModuÅ‚ jÄ™zyka Python pozwalajÄ…cy na dostÄ™p do rozszerzonych atrybutÃ³w plikÃ³w
 Name:		python-%{module}
 Version:	0.2
 Release:	2
@@ -18,9 +18,9 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 Python module for accessing Extended Attributes of the files.
 
-%description -l pl
-Modu³ jêzyka Python pozwalaj±cy na dostêp do rozszerzonych atrybutów
-plików.
+%description -l pl.UTF-8
+ModuÅ‚ jÄ™zyka Python pozwalajÄ…cy na dostÄ™p do rozszerzonych atrybutÃ³w
+plikÃ³w.
 
 %prep
 %setup -q -n %{module}-%{version}
