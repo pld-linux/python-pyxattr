@@ -2,7 +2,7 @@
 %define 	module	pyxattr
 
 Summary:	Python module for accessing Extended Attributes of the files
-Summary(pl.UTF-8):   Moduł języka Python pozwalający na dostęp do rozszerzonych atrybutów plików
+Summary(pl.UTF-8):	Moduł języka Python pozwalający na dostęp do rozszerzonych atrybutów plików
 Name:		python-%{module}
 Version:	0.2
 Release:	2
