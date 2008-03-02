@@ -4,12 +4,12 @@
 Summary:	Python module for accessing Extended Attributes of the files
 Summary(pl.UTF-8):	Moduł języka Python pozwalający na dostęp do rozszerzonych atrybutów plików
 Name:		python-%{module}
-Version:	0.2
-Release:	2
+Version:	0.2.2
+Release:	1
 License:	GPL
 Group:		Libraries/Python
 Source0:	http://dl.sourceforge.net/%{module}/%{module}-%{version}.tar.gz
-# Source0-md5:	6f824d05d6052c05f327d619f92c8a5a
+# Source0-md5:	33d722b0c67fcee42bb3c6455f135f94
 URL:		http://pyxattr.sourceforge.net/
 BuildRequires:	attr-devel
 %pyrequires_eq	python-libs
