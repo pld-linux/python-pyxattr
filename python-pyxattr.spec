@@ -12,6 +12,7 @@ Source0:	http://dl.sourceforge.net/%{module}/%{module}-%{version}.tar.gz
 # Source0-md5:	8e54ffa2ca575232d57213efcbcee289
 URL:		http://pyxattr.sourceforge.net/
 BuildRequires:	attr-devel
+BuildRequires:	python-setuptools
 %pyrequires_eq	python-libs
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
