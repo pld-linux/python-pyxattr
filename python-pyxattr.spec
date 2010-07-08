@@ -5,7 +5,7 @@ Summary:	Python module for accessing Extended Attributes of the files
 Summary(pl.UTF-8):	Moduł języka Python pozwalający na dostęp do rozszerzonych atrybutów plików
 Name:		python-%{module}
 Version:	0.4.0
-Release:	2
+Release:	3
 License:	LGPL
 Group:		Libraries/Python
 Source0:	http://dl.sourceforge.net/%{module}/%{module}-%{version}.tar.gz
