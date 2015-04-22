@@ -1,22 +1,19 @@
-
 %define 	module	pyxattr
-
 Summary:	Python module for accessing Extended Attributes of the files
 Summary(pl.UTF-8):	Moduł języka Python pozwalający na dostęp do rozszerzonych atrybutów plików
 Name:		python-%{module}
-Version:	0.4.0
-Release:	4
+Version:	0.5.0
+Release:	1
 License:	LGPL
 Group:		Libraries/Python
 Source0:	http://downloads.sourceforge.net/%{module}/%{module}-%{version}.tar.gz
-# Source0-md5:	8e54ffa2ca575232d57213efcbcee289
+# Source0-md5:	0f7ab1e185087329e40f7de218517c84
 URL:		http://pyxattr.sourceforge.net/
 BuildRequires:	attr-devel
 BuildRequires:	python-devel
 BuildRequires:	python-modules
 BuildRequires:	python-setuptools
 BuildRequires:	rpm-pythonprov
-%pyrequires_eq	python-libs
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -29,10 +26,14 @@ plików.
 %prep
 %setup -q -n %{module}-%{version}
 
+%build
+CC="%{__cc}" \
+CFLAGS="%{rpmcppflags} %{rpmcflags}" \
+%{__python} setup.py build
+
 %install
 rm -rf $RPM_BUILD_ROOT
-
-python setup.py install \
+%{__python} setup.py install \
 	--root=$RPM_BUILD_ROOT \
 	--optimize=2
 
@@ -41,5 +42,5 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%attr(755,root,root) %{py_sitedir}/*.so
-%{py_sitedir}/pyxattr-*.egg-info
+%attr(755,root,root) %{py_sitedir}/xattr.so
+%{py_sitedir}/pyxattr-%{version}-py*.egg-info
