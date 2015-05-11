@@ -6,7 +6,7 @@ Version:	0.5.0
 Release:	1
 License:	LGPL
 Group:		Libraries/Python
-Source0:	http://downloads.sourceforge.net/%{module}/%{module}-%{version}.tar.gz
+Source0:	http://downloads.sourceforge.net/pyxattr/%{module}-%{version}.tar.gz
 # Source0-md5:	0f7ab1e185087329e40f7de218517c84
 URL:		http://pyxattr.sourceforge.net/
 BuildRequires:	attr-devel
