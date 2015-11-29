@@ -9,6 +9,7 @@ Group:		Libraries/Python
 Source0:	http://downloads.sourceforge.net/pyxattr/%{module}-%{version}.tar.gz
 # Source0-md5:	0f7ab1e185087329e40f7de218517c84
 URL:		http://pyxattr.sourceforge.net/
+BuildRequires:	rpmbuild(macros) >= 1.710
 BuildRequires:	attr-devel
 BuildRequires:	python-devel
 BuildRequires:	python-modules
