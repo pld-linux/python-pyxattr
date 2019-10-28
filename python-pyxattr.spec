@@ -8,7 +8,7 @@ Summary:	Python 2 module for accessing Extended Attributes of the files
 Summary(pl.UTF-8):	Moduł Pythona 2 pozwalający na dostęp do rozszerzonych atrybutów plików
 Name:		python-%{module}
 Version:	0.6.1
-Release:	1
+Release:	2
 License:	LGPL v2.1+
 Group:		Libraries/Python
 Source0:	https://pyxattr.k1024.org/downloads/%{module}-%{version}.tar.gz
