@@ -1,12 +1,14 @@
+# NOTE: for versions >= 0.7.0 (for python 3.4+) see python3-pyxattr.spec
 #
 # Conditional build:
 %bcond_without	python2	# CPython 2.x module
-%bcond_without	python3	# CPython 3.x module
+%bcond_with	python3	# CPython 3.x module
 
 %define 	module	pyxattr
 Summary:	Python 2 module for accessing Extended Attributes of the files
 Summary(pl.UTF-8):	Moduł Pythona 2 pozwalający na dostęp do rozszerzonych atrybutów plików
 Name:		python-%{module}
+# note: keep 0.6.x here (python 2 support dropped in 0.7.x)
 Version:	0.6.1
 Release:	2
 License:	LGPL v2.1+
@@ -51,8 +53,6 @@ plików.
 %setup -q -n %{module}-%{version}
 
 %build
-#CC="%{__cc}" \
-#CFLAGS="%{rpmcppflags} %{rpmcflags}"
 %if %{with python2}
 %py_build
 %endif
